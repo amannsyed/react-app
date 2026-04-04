@@ -2,19 +2,71 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Knock Knock Physio 🏥
 
-This contains everything you need to run your app locally.
+> Professional home-based physiotherapy services — delivered to your door.
 
-View your app in AI Studio: https://ai.studio/apps/drive/18-H-uKUS19KDjKz_1vcelCTaNB7xQNaZ
+**Knock Knock Physio** is a modern, responsive web application for a mobile physiotherapy practice. It allows patients to learn about available services, read testimonials, view pricing, and book appointments — all from the comfort of their browser.
+
+🌐 **Live Site:** [amannsyed.github.io/knock-knock-physio](https://amannsyed.github.io/knock-knock-physio)
+
+---
+
+## Features
+
+- 📋 **Service Showcase** — Pain relief, post-surgical rehab, neurological therapy, elderly mobility support, and musculoskeletal treatment
+- 📅 **Online Booking** — Interactive appointment booking modal with form validation
+- 💬 **WhatsApp Booking** — Quick appointment requests via WhatsApp with a pre-filled message
+- 💷 **Pricing Plans** — Clear, transparent pricing for all service tiers
+- 🏅 **Affiliations** — Professional body memberships and accreditations
+- ⭐ **Testimonials** — Patient reviews and feedback
+- ❓ **FAQ** — Answers to common patient questions
+- 📬 **Contact Form** — Get in touch directly from the site
+- 🔐 **Admin Dashboard** — Protected admin login to manage bookings and site data
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 19 | UI framework |
+| TypeScript | Type safety |
+| Vite | Build tool & dev server |
+| GitHub Pages | Hosting & deployment |
+
+---
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js (v18+)
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/amannsyed/knock-knock-physio.git
+   cd knock-knock-physio
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `http://localhost:5173`.
+
+---
+
+## Deployment
+
+This project deploys to GitHub Pages via the `gh-pages` package.
+
+```bash
+npm run deploy
+```
+
+This runs `vite build` and publishes the `dist/` folder to the `gh-pages` branch.
