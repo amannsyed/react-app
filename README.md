@@ -26,10 +26,10 @@
 
 | Technology | Purpose |
 |---|---|
-| React 19 | UI framework |
+| [React 19](https://reactjs.org/) | UI framework |
 | TypeScript | Type safety |
-| Vite | Build tool & dev server |
-| GitHub Pages | Hosting & deployment |
+| [Vite](https://vitejs.dev/) | Build tool & dev server |
+| [GitHub Pages](https://pages.github.com/) | Hosting & deployment |
 
 ---
 
@@ -57,6 +57,15 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
 ## Deployment
 
 This project deploys to GitHub Pages via the `gh-pages` package.
@@ -66,3 +75,30 @@ npm run deploy
 ```
 
 This runs `vite build` and publishes the `dist/` folder to the `gh-pages` branch.
+
+---
+
+## 📁 Project Structure
+
+```text
+knock-knock-physio/
+├── src/
+│   ├── components/      # Reusable React UI components
+│   ├── App.tsx           # Root application component
+│   ├── main.tsx          # React DOM entry point
+│   └── index.css         # Global styles
+├── public/               # Static assets (images, icons)
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
+
+## 📝 License
+
+MIT
